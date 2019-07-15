@@ -8,4 +8,5 @@ a.przycisk {
     appearance: button;
     text-decoration: none;
     color: darkolivegreen;
+    padding: 2px 4px 2px 4px;
 }
