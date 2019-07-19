@@ -2,11 +2,34 @@ h1{
     color:darkkhaki;
 }
 
-a.przycisk {
+/*a.przycisk {
     -webkit-appearance: button;
     -moz-appearance: button;
     appearance: button;
     text-decoration: none;
     color: darkolivegreen;
     padding: 2px 4px 2px 4px;
+}*/
+
+a.przycisk {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: darkolivegreen;
+    padding: 40px 60px 40px 60px;
+    margin: 7px 7px 7px 7px;
+    font-size: 1,3em;
+    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","Helvetica Neue","Helvetica","Arial",sans-serif;
+    box-shadow: 10px 5px 5px black;
+}
+
+a:hover.przycisk {
+    /*box-shadow: x y rozmycie kolor*/
+    box-shadow:none;
+    
+    
+    
+    
+    
 }
