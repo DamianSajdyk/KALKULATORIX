@@ -14,11 +14,13 @@
     <h1>KALKULATORIX</h1>
     <h2>jednostki długości</h2>
     
+    
     <form action="jednostki_dlugosci.php" method="get">
         
-    Metry:  <input type="text" name="metry" /><br />
-    
-    <input type="submit" name="submit" value="przelicz" />
+    Metry: <br />
+        
+    <input class="ble" type="text" name="metry" /><br />
+    <input class="ble" type="submit" name="submit" value="przelicz" />
         
     </form>
 
