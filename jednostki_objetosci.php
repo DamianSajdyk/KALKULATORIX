@@ -14,6 +14,23 @@
     <h1>KALKULATORIX</h1>
     <h2>jednostki objetosci</h2>
     
+        <?php
+        if (!empty($_GET['objetosc'])) 
+        {
+            echo "zmienna jest ustawiona i ma wartość: " . $_GET['objetosc'];
+        }
+        else
+        {
+            echo "Zmienna nie jest ustawiona. Wprowadzą jej wartość w polu objetosc";
+        }
+    ?>
+    
+    <form action="jednostki_objetosci.php" method="get">
+        objetosc: <br />
+        <input class="ble" type="text" name="objetosc" /><br />
+        <input class="ble" type="submit" name="submit" value="przelicz" />
+    </form>
+    
     <a href="index.php" class="przycisk">Strona główna</a>
     
 </body>

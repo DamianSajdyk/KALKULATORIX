@@ -14,19 +14,24 @@
     <h1>KALKULATORIX</h1>
     <h2>jednostki długości</h2>
     
+    <?php
+        if (!empty($_GET['metry'])) 
+        {
+            echo "zmienna jest ustawiona i ma wartość: " . $_GET['metry'];
+        }
+        else
+        {
+            echo "Zmienna nie jest ustawiona. Wprowadzą jej wartość w polu Metry";
+        }
+    ?>
     
     <form action="jednostki_dlugosci.php" method="get">
-        
-    Metry: <br />
-        
-    <input class="ble" type="text" name="metry" /><br />
-    <input class="ble" type="submit" name="submit" value="przelicz" />
-        
+        Metry: <br />
+        <input class="ble" type="text" name="metry" /><br />
+        <input class="ble" type="submit" name="submit" value="przelicz" />
     </form>
 
-    <?php
-echo $_GET['metry'];
-?>
+
 
     
     
