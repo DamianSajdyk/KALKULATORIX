@@ -14,10 +14,10 @@
     <h1>KALKULATORIX</h1>
     <h2>jednostki objetosci</h2>
     
-        <?php
+    <?php
         if (!empty($_GET['objetosc'])) 
         {
-            echo "zmienna jest ustawiona i ma wartość: " . $_GET['objetosc'];
+            echo "zmienna ma wartość: " . $_GET['objetosc'];
         }
         else
         {

@@ -14,6 +14,23 @@
     <h1>KALKULATORIX</h1>
     <h2>jednostki wagi</h2>
     
+    <?php
+        if (!empty($_GET['waga'])) 
+        {
+            echo "zmienna ma wartość: " . $_GET['waga'];
+        }
+        else
+        {
+            echo "Zmienna nie jest ustawiona. Wprowadzą jej wartość w polu objetosc";
+        }
+    ?>
+    
+    <form action="jednostki_wagowe.php" method="get">
+        waga: <br />
+        <input class="ble" type="text" name="waga" /><br />
+        <input class="ble" type="submit" name="submit" value="przelicz" />
+    </form>
+    
     <a href="index.php" class="przycisk">Strona główna</a>
     
 </body>

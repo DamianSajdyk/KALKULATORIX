@@ -17,7 +17,7 @@
     <?php
         if (!empty($_GET['metry'])) 
         {
-            echo "zmienna jest ustawiona i ma wartość: " . $_GET['metry'];
+            echo "zmienna ma wartość: " . $_GET['metry'];
         }
         else
         {
@@ -31,12 +31,6 @@
         <input class="ble" type="submit" name="submit" value="przelicz" />
     </form>
 
-
-
-    
-    
-    
-    
     <a href="index.php" class="przycisk">Strona główna</a>
     
 </body>

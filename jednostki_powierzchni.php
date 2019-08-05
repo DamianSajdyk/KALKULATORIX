@@ -14,6 +14,23 @@
     <h1>KALKULATORIX</h1>
     <h2>jednostki powierzchni</h2>
     
+    <?php
+        if (!empty($_GET['powierzchnia'])) 
+        {
+            echo "zmienna ma wartość: " . $_GET['powierzchnia'];
+        }
+        else
+        {
+            echo "Zmienna nie jest ustawiona. Wprowadzą jej wartość w polu objetosc";
+        }
+    ?>
+    
+    <form action="jednostki_powierzchni.php" method="get">
+        powierzchnia: <br />
+        <input class="ble" type="text" name="powierzchnia" /><br />
+        <input class="ble" type="submit" name="submit" value="przelicz" />
+    </form>
+    
     <a href="index.php" class="przycisk">Strona główna</a>
     
 </body>

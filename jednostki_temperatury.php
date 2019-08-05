@@ -14,7 +14,24 @@
     <h1>KALKULATORIX</h1>
     <h2>jednostki temperatury</h2>
     
-    <a href="index.php" class="przycisk">Strona główna</a>
+    <?php
+        if (!empty($_GET['temperatura'])) 
+        {
+            echo "zmienna ma wartość: " . $_GET['temperatura'];
+        }
+        else
+        {
+            echo "Zmienna nie jest ustawiona. Wprowadzą jej wartość w polu objetosc";
+        }
+    ?>
+    
+    <form action="jednostki_temperatury.php" method="get">
+        temperatura: <br />
+        <input class="ble" type="text" name="temperatura" /><br />
+        <input class="ble" type="submit" name="submit" value="przelicz" />
+    </form>
+    
+     <a href="index.php" class="przycisk">Strona główna</a>
     
 </body>
 </html>

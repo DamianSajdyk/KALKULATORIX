@@ -23,16 +23,5 @@
     
     <a href="jednostki_powierzchni.php" class="przycisk">jednostki powierzchni</a>
     
- <?php
-
-    $a= 10;
-    $b= 2;
-    $c= $a+$b;
-
-var_dump ($a);
-
-    echo $c;
-?>
-    
 </body>
 </html>
