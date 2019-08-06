@@ -22,3 +22,16 @@ input.ble {
     color: green;
     margin: 3px 10px 3px 10px;
 }
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+ border: 1px solid black;   
+}
+
+
+
+

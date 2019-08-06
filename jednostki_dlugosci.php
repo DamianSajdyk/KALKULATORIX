@@ -26,10 +26,18 @@
     ?>
     
     <form action="jednostki_dlugosci.php" method="get">
-        Metry: <br />
-        <input class="ble" type="text" name="metry" /><br />
+        <input class="ble" type="text" name="metry" placeholder="metry" /><br />
         <input class="ble" type="submit" name="submit" value="przelicz" />
     </form>
+    
+    
+    <table>
+        <tr><th>cal</th><td>watosc</td></tr>
+        <tr><th>stopy</th><td>watosc</td></tr>
+        <tr><th>jard</th><td>watosc</td></tr>
+    
+    
+    </table>
 
     <a href="index.php" class="przycisk">Strona główna</a>
     
