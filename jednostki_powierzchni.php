@@ -27,9 +27,15 @@
     
     <form action="jednostki_powierzchni.php" method="get">
         powierzchnia: <br />
-        <input class="ble" type="text" name="powierzchnia" /><br />
+        <input class="ble" type="text" name="powierzchnia" placeholder="metr²" /><br />
         <input class="ble" type="submit" name="submit" value="przelicz" />
     </form>
+    
+    <table>
+        <tr><th>perch</th><td>watosc</td></tr>
+        <tr><th>rood</th><td>watosc</td></tr>
+        <tr><th>akr</th><td>watosc</td></tr>
+    </table>
     
     <a href="index.php" class="przycisk">Strona główna</a>
     

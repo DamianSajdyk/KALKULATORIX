@@ -27,9 +27,14 @@
     
     <form action="jednostki_temperatury.php" method="get">
         temperatura: <br />
-        <input class="ble" type="text" name="temperatura" /><br />
+        <input class="ble" type="text" name="temperatura"  placeholder="°C" /><br />
         <input class="ble" type="submit" name="submit" value="przelicz" />
     </form>
+    
+    <table>
+        <tr><th>stopień Fahrenheita</th><td>watosc</td></tr>
+        <tr><th>stopień Rankine’a</th><td>watosc</td></tr> 
+    </table>
     
      <a href="index.php" class="przycisk">Strona główna</a>
     

@@ -27,9 +27,15 @@
     
     <form action="jednostki_wagowe.php" method="get">
         waga: <br />
-        <input class="ble" type="text" name="waga" /><br />
+        <input class="ble" type="text" name="waga"  placeholder="kilogramy" /><br />
         <input class="ble" type="submit" name="submit" value="przelicz" />
     </form>
+    
+    <table>
+        <tr><th>gran</th><td>watosc</td></tr>
+        <tr><th>dram</th><td>watosc</td></tr>
+        <tr><th>uncja</th><td>watosc</td></tr>
+    </table>
     
     <a href="index.php" class="przycisk">Strona główna</a>
     

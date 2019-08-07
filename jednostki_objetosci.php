@@ -27,9 +27,15 @@
     
     <form action="jednostki_objetosci.php" method="get">
         objetosc: <br />
-        <input class="ble" type="text" name="objetosc" /><br />
+        <input class="ble" type="text" name="objetosc" placeholder="litr" /><br />
         <input class="ble" type="submit" name="submit" value="przelicz" />
     </form>
+    
+    <table>
+        <tr><th>uncja</th><td>watosc</td></tr>
+        <tr><th>gill</th><td>watosc</td></tr>
+        <tr><th>cup</th><td>watosc</td></tr>
+    </table>
     
     <a href="index.php" class="przycisk">Strona główna</a>
     

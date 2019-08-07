@@ -35,8 +35,6 @@
         <tr><th>cal</th><td>watosc</td></tr>
         <tr><th>stopy</th><td>watosc</td></tr>
         <tr><th>jard</th><td>watosc</td></tr>
-    
-    
     </table>
 
     <a href="index.php" class="przycisk">Strona główna</a>
