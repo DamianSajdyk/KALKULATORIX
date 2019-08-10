@@ -15,13 +15,16 @@
     <h2>jednostki długości</h2>
     
     <?php
+    // sprawdzanie czy zmienna $_GET ma ustawioną wartość
         if (!empty($_GET['metry'])) 
         {
             echo "zmienna ma wartość: " . $_GET['metry'];
+            $czy_zmienna_ustawiona = true;
         }
         else
         {
             echo "Zmienna nie jest ustawiona. Wprowadzą jej wartość w polu Metry";
+            $czy_zmienna_ustawiona = false;
         }
     ?>
     
@@ -32,8 +35,26 @@
     
     
     <table>
-        <tr><th>cal</th><td>watosc</td></tr>
+        <tr>
+            <th>
+                cal
+            </th>
+            <td>
+                <?php 
+                    if ($czy_zmienna_ustawiona==true)
+                    {
+                        echo $_GET['metry'];
+                    }
+                    else if ($czy_zmienna_ustawiona==false)
+                    {
+                        echo "-";
+                    }
+                ?>
+            </td>
+        </tr>
+        
         <tr><th>stopy</th><td>watosc</td></tr>
+        
         <tr><th>jard</th><td>watosc</td></tr>
     </table>
 
