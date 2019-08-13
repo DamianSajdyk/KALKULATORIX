@@ -15,6 +15,10 @@
     <h2>jednostki długości</h2>
     
     <?php
+    // $cal = 2.54; //jeden cal w centymetrach
+    
+    define("CAL",2.54);
+    
     // sprawdzanie czy zmienna $_GET ma ustawioną wartość
         if (!empty($_GET['metry'])) 
         {
@@ -43,7 +47,11 @@
                 <?php 
                     if ($czy_zmienna_ustawiona==true)
                     {
-                        echo $_GET['metry'];
+                        $metr = (float) $_GET['metry'];
+                        $centymetry = $metr * 100;
+                        $wynik = $centymetry / CAL;
+                        echo $wynik;
+                    
                     }
                     else if ($czy_zmienna_ustawiona==false)
                     {
