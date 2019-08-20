@@ -19,6 +19,8 @@
     
     define("CAL",2.54);
     
+    define("STOPA",30.48);
+    
     // sprawdzanie czy zmienna $_GET ma ustawioną wartość
         if (!empty($_GET['metry'])) 
         {
@@ -45,9 +47,9 @@
             </th>
             <td>
                 <?php 
-                    if ($czy_zmienna_ustawiona==true)
+                    if ($czy_zmienna_ustawiona == true)
                     {
-                        $metr = (float) $_GET['metry'];
+                        $metr = (float) $_GET['metry']; /*zamiana liczby otrzymywanej z zmiennej GET, która ma postac string (zwykłego tekstu), na zmienną typu float, która jest wykorzystywana do obliczeń*/
                         $centymetry = $metr * 100;
                         $wynik = $centymetry / CAL;
                         echo $wynik;
@@ -61,7 +63,29 @@
             </td>
         </tr>
         
-        <tr><th>stopy</th><td>watosc</td></tr>
+        <tr>
+                
+            <th>
+                stopy
+            </th>
+            <td>
+                <?php
+                    if ($czy_zmienna_ustawiona == true)
+                    {
+                       $metr = (float) $_GET['metry'];
+                        $centymetry = $metr * 100;
+                         $wynik = $centymetry / STOPA;
+                        echo $wynik;
+                        
+                    }
+                    else if ($czy_zmienna_ustawiona==false)
+                    {
+                        echo "-";
+                    }
+                
+                ?>
+            </td>
+        </tr>
         
         <tr><th>jard</th><td>watosc</td></tr>
     </table>
