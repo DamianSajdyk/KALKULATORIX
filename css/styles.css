@@ -1,7 +1,15 @@
+
+body, html{
+    background-image: url("tlo.jpg");
+
+
+}
+
 h1{
-    color:darkkhaki;
+    color: goldenrod;
 }
 a.przycisk {
+    background: white;
     -webkit-appearance: button;
     -moz-appearance: button;
     appearance: button;
