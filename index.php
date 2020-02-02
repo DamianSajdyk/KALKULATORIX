@@ -11,17 +11,27 @@
 </head>
     
 <body>
+
+
+
+<div class="col-container">
+
+  <div class="col-left-right">
+  </div>
+
+  <div class="col-center" >
     <h1>KALKULATORIX</h1>
-    
-    <a href="jednostki_dlugosci.php" class="przycisk">jednostki dlugosci</a>
-    
-     <a href="jednostki_objetosci.php" class="przycisk">jednostki objetosci</a>
-    
-     <a href="jednostki_wagowe.php" class="przycisk">jednostki wagowe</a>
-    
-     <a href="jednostki_temperatury.php" class="przycisk">jednostki temperatury</a>
-    
+    <a href="jednostki_dlugosci.php" class="przycisk dlugosci" >jednostki dlugosci</a>
+    <a href="jednostki_objetosci.php" class="przycisk">jednostki objetosci</a>
+    <a href="jednostki_wagowe.php" class="przycisk">jednostki wagowe</a>
+    <a href="jednostki_temperatury.php" class="przycisk">jednostki temperatury</a>
     <a href="jednostki_powierzchni.php" class="przycisk">jednostki powierzchni</a>
+    </div>
+  
+  <div class="col">
+  </div>
+
+</div>
     
 </body>
 </html>

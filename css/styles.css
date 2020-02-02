@@ -1,42 +1,76 @@
 
-body, html{
-    background-image: url("tlo.jpg");
-
-
+.col-container
+{
+    display: table;
+    width: 100%;
 }
 
-h1{
+.col-center
+{
+    background: white !important;
+    width: 80%;
+    display: table-cell;
+    padding: 16px;
+}
+
+.col-left-right
+{
+    width: 10%;
+    display: table-cell;
+    padding: 16px;
+}
+
+body, html
+{
+    background-image: url("tlo.jpg");
+}
+
+h1
+{
     color: goldenrod;
 }
-a.przycisk {
-    background: white;
+.przycisk
+{
+    /* background: white; */
     -webkit-appearance: button;
     -moz-appearance: button;
     appearance: button;
     text-decoration: none;
     color: darkolivegreen;
-    padding: 40px 60px 40px 60px;
+    padding: 140px 140px 140px 140px;
     margin: 7px 7px 7px 7px;
     font-size: 1,3em;
     font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","Helvetica Neue","Helvetica","Arial",sans-serif;
     box-shadow: 10px 5px 5px black;
 }
 
-a:hover.przycisk {
+.dlugosci
+{
+    background-image: url('linijka.jpg');
+    background-size: 560px;
+    border: 2px solid;
+}
+
+
+a:hover.przycisk
+{
     box-shadow:none;
 }
-input.ble {
+input.ble
+{
   width: 10%;
     color: green;
     margin: 3px 10px 3px 10px;
 }
 
-table {
+table
+{
     border: 1px solid black;
     border-collapse: collapse;
 }
 
-th, td {
+th, td
+{
  border: 1px solid black;   
 }
 
