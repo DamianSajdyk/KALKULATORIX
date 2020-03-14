@@ -1,34 +1,41 @@
 
-.col-container
+.wiersz
 {
     display: table;
     width: 100%;
+    margin-bottom: 0.5em;
+}
+
+a.naglowek
+{
+    color:#cc0000;
+    text-decoration: none;
+}
+
+a:hover.naglowek{
+    color:#ff0000;
 }
 
 .col-center
 {
-    background: white !important;
-    width: 80%;
+    background: white;
+    width: 100%; 
     display: table-cell;
     padding: 16px;
 }
 
 .col-left-right
 {
-    width: 10%;
+    width: 0%;
     display: table-cell;
-    padding: 16px;
+    padding: 0px;
 }
 
 body, html
 {
-    background-image: url("tlo.jpg");
+    background: whitesmoke ;
 }
 
-h1
-{
-    color: goldenrod;
-}
 .przycisk
 {
     /* background: white; */
@@ -74,6 +81,27 @@ th, td
  border: 1px solid black;   
 }
 
+.btn {
+    min-width: 150px;
+    padding: 15px 10px;
+    margin: 20px;
+    background: rgb(214, 214, 214);
+    border: none;
+    border-radius: 25px;
+    color: rgb(50, 207, 207);
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: -7px -7px 20px 0 rgba(255, 255, 255, 0.7),
+      7px 7px 20px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn:hover {
+    box-shadow: inset -7px -7px 20px 0 rgba(255, 255, 255, 0.7),
+      inset 7px 7px 20px 0 rgba(0, 0, 0, 0.2);
+  }
+  
 
 
 
